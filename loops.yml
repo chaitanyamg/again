@@ -1,0 +1,12 @@
+---
+- hosts: group1
+  become: yes
+  tasks:
+  - name: install
+    apt:
+     name: "{{item}}"
+     state: present
+    loop:
+      - apache2
+      - tree
+      - git
