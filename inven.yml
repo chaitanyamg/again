@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   vars:
-   apache2: server
+   server: apache2
   tasks:
   - name: install httpd
     apt:
