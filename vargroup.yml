@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install apache2
+    apt:
+      name: "{{server1}}"
+      state: present
+  - name: start apache2
+    service:
+      name: "{{server1}}"
+      state: started
