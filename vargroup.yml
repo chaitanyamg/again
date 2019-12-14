@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install apache2
+  - name: install apache22
     apt:
       name: "{{server1}}"
       state: present
