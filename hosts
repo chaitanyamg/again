@@ -1,3 +1,5 @@
 172.31.42.42
-[vars]
+
+
+[all:vars]
 server=apache2
