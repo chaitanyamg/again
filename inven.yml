@@ -4,7 +4,7 @@
   vars:
    server: apache2
   tasks:
-  - name: install httpd
+  - name: install apache2
     apt:
      name: "{{server}}"
-     state: install
+     state: present
