@@ -1,7 +1,6 @@
 ---
 - hosts: group1
   become: yes
-  update_cache: yes
   tasks:
   - name: uninstall apache2
     service:
