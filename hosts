@@ -2,4 +2,4 @@
 
 
 [all:vars]
-server=apache2
+server=tree
