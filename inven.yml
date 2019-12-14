@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  vars:
+   apache2: server
+  tasks:
+  - name: install httpd
+    apt:
+     name: "{{server}}"
+     state: install
