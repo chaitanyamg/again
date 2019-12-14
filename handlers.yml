@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: uninstall apache2
-    service:
+    apt:
      name: apache2
      state: absent
   - name: install apache2
