@@ -1,0 +1,12 @@
+---
+- name: give group perm to conf
+  file:
+    path: /opt/apache-tomcat-9.0.30/conf
+    group: tomcat
+    mode: g=r
+- name: give group perm to conf
+  file:
+    path: /opt/apache-tomcat-9.0.30/conf
+    group: tomcat
+    mode: g=x
+    
