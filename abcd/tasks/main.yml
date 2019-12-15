@@ -7,3 +7,4 @@
 - include_tasks: extract.yml
 - include_tasks: changegroup.yml
 - include_tasks: conf.yml
+- include_tasks: reload.yml
