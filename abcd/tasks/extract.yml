@@ -1,5 +1,6 @@
 ---
 - name: extract file
   unarchive:
-   src: /opt/apache-tomcat-8*tar.gz
+   src: /opt/apache-tomcat-9.0.30.tar.gz
    dest: /opt
+   remote_src: yes
