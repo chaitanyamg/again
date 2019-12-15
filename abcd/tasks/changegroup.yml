@@ -1,0 +1,6 @@
+- name: Test task
+  file:
+    path: "/opt"
+    state: directory
+    owner: tom
+    group: tomcat

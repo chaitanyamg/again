@@ -1,0 +1,5 @@
+---
+- name: extract file
+  unarchive:
+   src: /opt/apache-tomcat-8*tar.gz
+   dest: /opt

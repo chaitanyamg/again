@@ -1,0 +1,4 @@
+- name: create tomcat group
+  group:
+    name: tomcat
+    state: present
