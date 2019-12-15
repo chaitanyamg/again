@@ -3,7 +3,7 @@
   systemd:
    state: restarted
    daemon_reload: yes
-  ignore_error: yes
+  ignore_errors: yes
 - name: start tomcat
   service:
    name: tomcat
