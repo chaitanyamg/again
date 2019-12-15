@@ -1,0 +1,4 @@
+---
+- hosts: appservers
+  become: yes
+  roles: abcd
