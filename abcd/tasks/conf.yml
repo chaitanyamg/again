@@ -9,4 +9,23 @@
     path: /opt/apache-tomcat-9.0.30/conf
     group: tomcat
     mode: g=x
-    
+- name: Test task
+  file:
+    path: /opt/apache-tomcat-9.0.30/webapps
+    state: directory
+    owner: tom
+- name: Test task
+  file:
+    path: /opt/apache-tomcat-9.0.30/work
+    state: directory
+    owner: tom
+- name: Test task
+  file:
+    path: /opt/apache-tomcat-9.0.30/temp
+    state: directory
+    owner: tom
+- name: Test task
+  file:
+    path: /opt/apache-tomcat-9.0.30/logs
+    state: directory
+    owner: tom
