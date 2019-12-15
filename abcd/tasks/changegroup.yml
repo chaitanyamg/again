@@ -1,6 +1,6 @@
 - name: Test task
   file:
-    path: "/opt"
+    path: "/opt/apache-tomcat-9.0.30"
     state: directory
     owner: tom
     group: tomcat
