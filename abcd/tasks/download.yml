@@ -1,6 +1,6 @@
 ---
 - name: download
   get_url:
-    url: https://www.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz
-    dest: /home/apache-tomcat-8.5.5.tar.gz
+    url: http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
+    dest: /opt/apache-tomcat-9.0.30.tar.gz
     force_basic_auth: yes
