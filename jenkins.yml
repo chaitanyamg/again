@@ -1,0 +1,29 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: updaye
+    apt:
+    update_cache: yes
+  - name: install jdk
+    apt:
+     name: default-jdk
+     state: present
+  - name: install maven
+    apt: 
+     name: maven
+     state: present
+  - name: Add an Apt signing key, uses whichever key is at the URL
+    apt_key:
+     url: https://pkg.jenkins.io/debian/jenkins-ci.org.key
+     state: present
+  - name: execut command
+    command: 
+      cmd:sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+  - name: 
+    apt:
+     update_cache: yes
+  - name: install jenkins   
+    apt:
+     name: jenkins
+     state: present
